@@ -75,3 +75,12 @@ public static String actualMemorySize(String memorySize) {
     else:
       crypted.append(character)   
   print("".join(crypted)) 
+
+# Week of Feb 14(JavaScript)
+
+const getHashTags = headline => headline.toLowerCase()
+
+	.split(" ")
+	.sort((a, b) => b.length - a.length)
+	.map(word => "#" + word)
+	.slice(0, 3);
