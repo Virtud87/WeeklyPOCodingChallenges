@@ -1,5 +1,23 @@
 # WeeklyPOCodingChallenges
 
+# Week of Feb 21(JS)
+
+	const duration = array => {
+	  let colorTime = array.length * 2;
+	  let switchTime = 0;
+
+	  for (i = 1; i < array.length; i++) {
+	    if (array[i] != array[i - 1] && array.length > 1)
+	      switchTime++;
+	  }
+
+	  return colorTime + switchTime;
+	};
+
+	console.log(duration(["Blue"]));
+	console.log(duration(["Red", "Yellow", "Green", "Blue"]));
+	console.log(duration(["Blue", "Blue", "Blue", "Red", "Red", "Red"]));
+
 # Week of Feb 14(Java)
 public static String actualMemorySize(String memorySize) {
 
